@@ -1,13 +1,13 @@
 {% set name = "jax-cfd" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jax-cfd-{{ version }}.tar.gz
-  sha256: c2234dc498577706de75e2424d409b216a036ef823b273cf7a05a2f4b2bd8d5a
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 7e42d6f3b1fe93b2400314d47eb3d9098fe03617a0cc54e84bcf4fed35c10b4e
 
 build:
   noarch: python
